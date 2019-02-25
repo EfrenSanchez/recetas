@@ -1,4 +1,4 @@
-#Recetas
+# Recetas
 
 ![App Capture](.docs/captura.png)
 
