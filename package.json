@@ -2,7 +2,11 @@
   "name": "recetas",
   "version": "0.1.0",
   "private": true,
+  "repository": "https://github.com/EfrenSanchez/recetas",
+  "author": "Efren Sanchez <efren.sanchezgon@gmail.com>",
+  "homepage": "https://efrensanchez.github.io/recetas/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "isomorphic-fetch": "^2.2.1",
     "react": "^16.8.3",
     "react-app-rewire-workbox": "^2.0.1",
@@ -19,7 +23,9 @@
     "start": "serve ./build -s -p ${PORT:-5000}",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
